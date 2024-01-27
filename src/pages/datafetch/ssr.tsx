@@ -9,7 +9,7 @@ export async function getServerSideProps() {
     }
 }
 
-const ssr=({data}:any)=>{
+const SSR=({data}:any)=>{
     return (<>
         <h1>User's List</h1>
         <table>
@@ -34,4 +34,4 @@ const ssr=({data}:any)=>{
         </>);
 }
 
-export default ssr;
+export default SSR;

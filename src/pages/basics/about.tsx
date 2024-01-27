@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { generateTitle } from "./generatetitle";
 
-const about=()=>{
+const About=()=>{
 
     const router = useRouter();
     const title = generateTitle(router.pathname);
@@ -16,4 +16,4 @@ const about=()=>{
     );
 }
 
-export default about;
+export default About;

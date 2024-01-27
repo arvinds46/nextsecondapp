@@ -5,7 +5,7 @@ interface DataType {
     email: string;
     department: string;
 }
-const csr=()=>{
+const CSR=()=>{
     const [data,setData] = useState<Array<DataType>>([]);
 
     const fetchData=async()=>{
@@ -23,7 +23,7 @@ const csr=()=>{
     }, []);
 
     return (<>
-        <h1>User's List</h1>
+        <h1>Users List</h1>
         <table>
             <thead>
                 <tr><th>ID</th><th>Name</th><th>Email</th><th>Department</th><th>Operations</th></tr>
@@ -46,4 +46,4 @@ const csr=()=>{
         </>);
 }
 
-export default csr;
+export default CSR;

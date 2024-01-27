@@ -1,4 +1,4 @@
-const mypage=()=>{
+const MyPage=()=>{
     const items=[
         {id:1,title:'Pen',price:10,description:'Reynolds',rating:1.2},
         {id:1,title:'Pencil',price:20,description:'Apsara',rating:4.2},
@@ -20,4 +20,4 @@ const mypage=()=>{
     )
 }
 
-export default mypage;
+export default MyPage;
