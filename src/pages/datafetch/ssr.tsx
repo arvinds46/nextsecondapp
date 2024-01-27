@@ -18,7 +18,7 @@ const ssr=({data}:any)=>{
             </thead>
             <tbody>
                 {
-                    data.map((item) => {
+                    data.map((item:any) => {
                         return(
                             <tr key={item.id}>
                                 <td>{item.id}</td>
