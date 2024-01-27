@@ -2,6 +2,7 @@
   "name": "nextsecondapp",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://arvinds46.github.io/nextsecondapp",
   "scripts": {
     "dev": "next dev",
     "predeploy": "npm run build",
