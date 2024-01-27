@@ -1,4 +1,4 @@
-export const getEvents = async()=>{
+const getEvents = async()=>{
     const events=[
         {id:1,title:"Orientation Class",date:"2024-01-24"},
         {id:1,title:"Live Class",date:"2024-01-24"},
@@ -6,3 +6,5 @@ export const getEvents = async()=>{
     ];
     return events;
 }
+
+export default getEvents;

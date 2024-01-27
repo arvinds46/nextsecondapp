@@ -1,4 +1,4 @@
-export const generateTitle=(pathname:any)=>{
+const generateTitle=(pathname:any)=>{
     switch (pathname) {
         case '/basics/about':
             return 'About Us'
@@ -6,3 +6,5 @@ export const generateTitle=(pathname:any)=>{
             return 'My App'
     }
 }
+
+export default generateTitle;
