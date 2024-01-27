@@ -1,15 +1,10 @@
-import { getEvents } from "./event";
 
-export async function getServerSideProps() {
-    //fetch data
-    const events = await getEvents();
-    
-    return {
-        props:{
-            events
-        }
-    }
-}
+    const events=[
+        {id:1,title:"Orientation Class",date:"2024-01-24"},
+        {id:1,title:"Live Class",date:"2024-01-24"},
+        {id:1,title:"Doubt Class",date:"2024-01-26"}
+    ];
+
 
 function EventPage({events}:any) {
     return ( <>

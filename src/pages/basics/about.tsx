@@ -1,6 +1,13 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { generateTitle } from "./generatetitle";
+const generateTitle=(pathname:any)=>{
+    switch (pathname) {
+        case '/basics/about':
+            return 'About Us'
+        default:
+            return 'My App'
+    }
+}
 
 const About=()=>{
 
