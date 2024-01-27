@@ -1,9 +1,13 @@
 import Head from "next/head";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-
+interface DataType {
+    ID: string;
+    Handle: string;
+    Role: string;
+}
 const Blog=()=>{
-    const [posts,setPost] = useState([]);
+    const [posts,setPost] = useState<Array<DataType>>([]);
 
     const fetchPosts=async()=>{
         try {

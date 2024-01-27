@@ -1,12 +1,16 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-
+interface DataType {
+    ID: string;
+    Handle: string;
+    Role: string;
+}
 const BlogDetail=()=>{
     const router = useRouter();
     const slug = router.query.slug;console.log(slug);
-    const [post,setPost] = useState([]);
-    const [comments,setComment] = useState([]);
+    const [post,setPost] = useState<Array<DataType>>([]);
+    const [comments,setComment] = useState<Array<DataType>>([]);
     const fetchPosts=async()=>{
         try {
             const resp = await fetch('https://jsonplaceholder.typicode.com/posts/'+slug);

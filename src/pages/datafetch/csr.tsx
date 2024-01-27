@@ -1,7 +1,11 @@
 import { useEffect, useState } from "react";
-
+interface DataType {
+    ID: string;
+    Handle: string;
+    Role: string;
+}
 const csr=()=>{
-    const [data,setData] = useState([]);
+    const [data,setData] = useState<Array<DataType>>([]);
 
     const fetchData=async()=>{
         try {
