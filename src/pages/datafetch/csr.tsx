@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 interface DataType {
-    ID: string;
-    Handle: string;
-    Role: string;
+    id: string;
+    name: string;
+    email: string;
+    department: string;
 }
 const csr=()=>{
     const [data,setData] = useState<Array<DataType>>([]);

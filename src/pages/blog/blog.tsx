@@ -2,9 +2,8 @@ import Head from "next/head";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 interface DataType {
-    ID: string;
-    Handle: string;
-    Role: string;
+    id: string;
+    title: string;
 }
 const Blog=()=>{
     const [posts,setPost] = useState<Array<DataType>>([]);

@@ -1,15 +1,19 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+interface MyInterface {
+    id: string;
+    title: string;
+    body: string;
+}
 interface DataType {
-    ID: string;
-    Handle: string;
-    Role: string;
+    email: string;
+    body: string;
 }
 const BlogDetail=()=>{
     const router = useRouter();
-    const slug = router.query.slug;console.log(slug);
-    const [post,setPost] = useState<Array<DataType>>([]);
+    const slug = router.query.slug;
+    const [post,setPost] = useState<MyInterface>({id:'',title:'',body:''});
     const [comments,setComment] = useState<Array<DataType>>([]);
     const fetchPosts=async()=>{
         try {
